@@ -36,8 +36,7 @@ class CustomDottedWidget extends StatelessWidget {
             width: width,
             height: 150,
             decoration: BoxDecoration(
-              color: Colors
-                  .transparent, // Background color inside dotted border
+              color: Colors.transparent, // Background color inside dotted border
             ),
           ),
         ),
