@@ -24,7 +24,7 @@ class _SliderViewState extends State<SliderView> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250, // Adjusted height for a better view
+      height: Get.height / 4.5,
       child: Column(
         children: [
           Expanded(
@@ -59,7 +59,7 @@ class _SliderViewState extends State<SliderView> with SingleTickerProviderStateM
   // Method to build a scaling transition
   Widget _buildScalingTransition(String image, int index) {
     return TweenAnimationBuilder(
-      tween: Tween<double>(begin: 0.8, end: 1.0), // Scaling from 50% to 100%
+      tween: Tween<double>(begin: 0.9, end: 1.0), // Scaling from 50% to 100%
       duration: const Duration(milliseconds: 600),
       builder: (context, double scale, child) {
         return Transform.scale(

@@ -23,6 +23,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Set the status bar style here
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent, // Set the status bar color
+      statusBarIconBrightness:
+      Brightness.dark, // Use Brightness.light for dark icons
+    ));
     return ScreenUtilInit(
       designSize: const Size(428, 926),  // Your design size
       minTextAdapt: true,
